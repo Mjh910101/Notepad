@@ -49,6 +49,7 @@ import com.zmyh.r.handler.DateHandle;
 import com.zmyh.r.handler.JsonHandle;
 import com.zmyh.r.handler.MapHandler;
 import com.zmyh.r.handler.MapHandler.MapListener;
+import com.zmyh.r.handler.SystemHandle;
 import com.zmyh.r.handler.TypeDictBox;
 import com.zmyh.r.handler.TypeDictHandle;
 import com.zmyh.r.handler.UserObjHandle;
@@ -66,6 +67,9 @@ import com.zmyh.r.tool.Passageway;
 import com.zmyh.r.tool.ShowMessage;
 
 public class SandEmphasisActivity extends Activity {
+
+    private final static String LAST_SAND_PEOPLE = "last_sand_people";
+    private final static String LAST_SAND_TEL = "last_sand_tel";
 
     public final static String IS_EMPHASIS = "isEmphasis";
     public final static String MM_CHANNEL = "mmChannel";
@@ -517,8 +521,6 @@ public class SandEmphasisActivity extends Activity {
     private void initContent(TroopObj obj) {
         titleInput.setText(obj.getMu_name());
         contentInput.setText(obj.getMu_desc() + "\n" + TroopObj.getContent(obj));
-        nameInput.setText(obj.getMu_contact());
-        phoneInput.setText(obj.getMu_phone_1());
         addressInput.setText(obj.getMu_zb());
         if (!obj.getMu_sz_type().equals("")) {
             zsTypeText.setText(obj.getMu_sz_type());
@@ -545,6 +547,18 @@ public class SandEmphasisActivity extends Activity {
         }
         if (obj.getMu_latitude() > 0 && obj.getMu_longitude() > 0) {
             mapText.setText("获取成功");
+        }
+
+        if (obj.getMu_contact().equals("")) {
+            nameInput.setText(SystemHandle.getString(context, LAST_SAND_PEOPLE));
+        } else {
+            nameInput.setText(obj.getMu_contact());
+        }
+
+        if (obj.getMu_phone_1().equals("")) {
+            phoneInput.setText(SystemHandle.getString(context, LAST_SAND_TEL));
+        } else {
+            phoneInput.setText(obj.getMu_phone_1());
         }
         initPicBox();
     }
@@ -682,6 +696,8 @@ public class SandEmphasisActivity extends Activity {
                         if (r == 1) {
                             ForumFrameLayout.UPLOAD = true;
                             ShowMessage.showToast(context, "发送成功");
+                            SystemHandle.saveStringMessage(context, LAST_SAND_PEOPLE, nameInput.getText().toString());
+                            SystemHandle.saveStringMessage(context, LAST_SAND_TEL, phoneInput.getText().toString());
                             Intent i = new Intent();
                             Bundle b = new Bundle();
                             b.putBoolean("ok", true);

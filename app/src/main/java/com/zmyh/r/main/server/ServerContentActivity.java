@@ -218,7 +218,7 @@ public class ServerContentActivity extends Activity {
         Bundle b = new Bundle();
         b.putInt("sum", sum);
         b.putString("id", mServerObj.getId());
-        b.putString("message", "数量"+sum + " " + mServerObj.getTitle() + " 订金");
+        b.putString("message", "数量" + sum + " " + mServerObj.getTitle() + " 订金");
         b.putString("smsto", mServerObj.getPhone());
         b.putString("sms_body", "您好，我已通过【中苗花木】购买了您的“" + mServerObj.getTitle() + "”，已付订金" + deposit + "元，稍后我将直接联系您进行后续交易。");
         b.putDouble(PayActivity.TOPUP_MONEY, deposit);
@@ -306,7 +306,7 @@ public class ServerContentActivity extends Activity {
                 maneyBox.setVisibility(View.VISIBLE);
             }
         }
-
+//        commentInput.setFocusable(false);
     }
 
     private void closeKeyboard() {
@@ -330,6 +330,8 @@ public class ServerContentActivity extends Activity {
 
         maneyText.setText("￥" + obj.getMu_price());
         setManey(1);
+
+        scroll.scrollTo(0, 20);
     }
 
     private void setAddress(String a) {

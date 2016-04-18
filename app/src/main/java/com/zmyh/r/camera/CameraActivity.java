@@ -57,6 +57,7 @@ import com.zmyh.r.handler.MapHandler.MapListener;
 import com.zmyh.r.handler.SystemHandle;
 import com.zmyh.r.interfaces.CallbackForBoolean;
 import com.zmyh.r.interfaces.CallbackForString;
+import com.zmyh.r.photo.ImageListAcitvity;
 import com.zmyh.r.photo.PhotoActivity;
 import com.zmyh.r.tool.AddPicDialog;
 import com.zmyh.r.tool.LineViewTool;
@@ -426,13 +427,13 @@ public class CameraActivity extends Activity {
     }
 
     private void seePic(CameraPicObj obj) {
-        // String path = obj.getMediumFilePath();
-        // ArrayList<String> picList = new ArrayList<String>();
-        // picList.add(path);
-        // Bundle b = new Bundle();
-        // b.putStringArrayList("iamge_list", picList);
-        // b.putInt("position", 0);
-        // Passageway.jumpActivity(context, ImageListAcitvity.class, b);
+         String path = obj.getMediumFilePath();
+         ArrayList<String> picList = new ArrayList<String>();
+         picList.add(path);
+         Bundle b = new Bundle();
+         b.putStringArrayList("iamge_list", picList);
+         b.putInt("position", 0);
+         Passageway.jumpActivity(context, ImageListAcitvity.class, b);
     }
 
     private void getPicAddress(final CameraPicObj obj) {
