@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/server_mapBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/server_map_icon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/seedling_field_icon"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/seedling_field_icon"/>
+
+                    <TextView
+                        android:id="@+id/server_takePic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/take_pic_icon"
+                        android:gravity="center"
+                        android:text="苗木拍照"
+                        android:textColor="@color/text_green_01"/>
+
+                    <TextView
+                        android:id="@+id/server_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/photo_02_icon"
+                        android:gravity="center"
+                        android:text="苗木相册"
+                        android:textColor="@color/text_green_01"/>
+
+                    <TextView
+                        android:id="@+id/server_sxj_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/sxj_icon"
+                        android:gravity="center"
+                        android:text="上下架"
+                        android:textColor="@color/text_green_01"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/seedling_buy_icon"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/seedling_buy_icon"/>
+
+                    <TextView
+                        android:id="@+id/server_gy_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/gy_icon"
+                        android:gravity="center"
+                        android:text="苗木供应"
+                        android:textColor="@color/text_orange_01"/>
+
+                    <TextView
+                        android:id="@+id/server_qg_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/qg_icon"
+                        android:gravity="center"
+                        android:text="苗木求购"
+                        android:textColor="@color/text_orange_01"/>
+
+                    <TextView
+                        android:id="@+id/server_shopping"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/shopping_car_icon"
+                        android:gravity="center"
+                        android:text="购物车"
+                        android:textColor="@color/text_orange_01"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tool_icon"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/tool_icon"/>
+
+                    <TextView
+                        android:id="@+id/server_send_gy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/gyfb_icon"
+                        android:gravity="center"
+                        android:text="供应发布"
+                        android:textColor="@color/text_bule_01"/>
+
+                    <TextView
+                        android:id="@+id/server_send_qg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/qgfb_icon"
+                        android:gravity="center"
+                        android:text="求购发布"
+                        android:textColor="@color/text_bule_01"/>
+
+                    <TextView
+                        android:id="@+id/server_sc_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/sc_icon"
+                        android:gravity="center"
+                        android:text="我的收藏"
+                        android:textColor="@color/text_bule_01"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/server_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/layout_server_v4.xml -->

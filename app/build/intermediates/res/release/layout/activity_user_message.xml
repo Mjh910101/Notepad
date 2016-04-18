@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/message_gather"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/message_gatherTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="收到的"
+                        android:textColor="@color/text_green"
+                        android:textSize="17dp"/>
+
+                    <View
+                        android:id="@+id/message_gatherLine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@id/message_gatherTitle"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/text_green"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/message_send"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/message_sendTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="发出的"
+                        android:textColor="@color/text_green"
+                        android:textSize="17dp"/>
+
+                    <View
+                        android:id="@+id/message_sendLine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@id/message_sendTitle"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/text_green"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"/>
+
+            <ListView
+                android:id="@+id/message_dataList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:divider="@color/white_lucency"
+                android:dividerHeight="10dp">
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_notContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="没有数据"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:visibility="invisible"/>
+
+        <ProgressBar
+            android:id="@+id/message_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/activity_user_message.xml -->

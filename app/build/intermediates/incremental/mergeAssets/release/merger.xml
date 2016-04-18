@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/Hua/StudioProjects/Notepad_v3/app/src/main/assets"><file name="logo.png" path="/Users/Hua/StudioProjects/Notepad_v3/app/src/main/assets/logo.png"/><file name="mm_dict.txt" path="/Users/Hua/StudioProjects/Notepad_v3/app/src/main/assets/mm_dict.txt"/></source></dataSet><dataSet config="release"><source path="/Users/Hua/StudioProjects/Notepad_v3/app/src/release/assets"/></dataSet></merger>

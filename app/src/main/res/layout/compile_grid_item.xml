@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/compile_picBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/compile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/compile_deletePic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/compile_picBox"
+        android:layout_alignTop="@id/compile_picBox"
+        android:layout_margin="2dp"
+        android:src="@drawable/delete_image_icon" />
+
+    <TextView
+        android:id="@+id/compile_remarkMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/compile_picBox"
+        android:layout_alignRight="@id/compile_picBox"
+        android:layout_below="@id/compile_picBox"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/input_green_bg"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/green_01"
+        android:visibility="gone" />
+
+</RelativeLayout>

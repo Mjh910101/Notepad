@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/verify_smsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="验证码已发送，请前往手机短信查看，再到此输入收到的数字"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/verify_phoneBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_smsTitle"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_background_green_frame_0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/verify_telIcon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tel_num" />
+
+            <TextView
+                android:id="@+id/verify_telInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/verify_telIcon"
+                android:background="@drawable/input_stype_lucency"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/verify_codeBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_phoneBox"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_background_green_frame_0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/verify_codeInputIcon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/message_icon" />
+
+            <EditText
+                android:id="@+id/verify_codeInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/verify_codeInputIcon"
+                android:background="@drawable/input_stype_lucency"
+                android:hint="请输入短信验证码"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/verify_confirmBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_codeBox"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_stype_green"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/verify_getCodeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="60秒内没有收到验证码请重新获取。多次失败请联系客服~"
+            android:textColor="@color/text_gray_01"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/verify_getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/verify_getCodeMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:background="@drawable/message_bg"
+            android:text="60S"
+            android:textColor="@color/green_01"
+            android:textSize="15dp" />
+
+        <ProgressBar
+            android:id="@+id/verify_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+TASK com.zmyh.r id=21
+  ACTIVITY com.zmyh.r/.main.MainActivity 41d319f0 pid=11321
+    Local Activity 419d7970 State:
+      mResumed=true mStopped=false mFinished=false
+      mLoadersStarted=true
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 0mcc0mnc zh_CN layoutdir=0 sw360dp w360dp h615dp nrml long port finger -keyb/v/h dpad/v skin=/system/framework/framework-res.apk s.4}
+    Active Fragments in 419d7ab8:
+      #0: ServerFrameLayoutV2{419ecd98 #0 id=0x7f090046}
+        mFragmentId=#7f090046 mContainerId#=7f090046 mTag=null
+        mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{419d7ab8 in MainActivity{419d7970}}
+        mActivity=com.zmyh.r.main.MainActivity@419d7970
+        mContainer=android.widget.FrameLayout@419e8248
+        mView=android.widget.LinearLayout@41cc3c68
+    Added Fragments:
+      #0: ServerFrameLayoutV2{419ecd98 #0 id=0x7f090046}
+    FragmentManager misc state:
+      mCurState=5 mStateSaved=false mDestroyed=false

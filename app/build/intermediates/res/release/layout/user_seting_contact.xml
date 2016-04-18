@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="联系方式"
+        android:textColor="@color/text_gray_01"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background_gray_frame_10"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_seting_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/user_seting_phoneRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="＞"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/user_seting_phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="手机"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/user_seting_userMobileInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/user_seting_phoneText"
+                android:background="@drawable/input_stype_lucency"
+                android:gravity="right"
+                android:text="phone"
+                android:textColor="@color/text_gray"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_seting_mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/user_seting_mailRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="＞"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/user_seting_mailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="邮箱"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/user_seting_userMailInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/user_seting_mailText"
+                android:background="@drawable/input_stype_lucency"
+                android:gravity="right"
+                android:text="mail"
+                android:textColor="@color/text_gray"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_seting_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/user_seting_qqRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="＞"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/user_seting_qqText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="QQ"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/user_seting_userQQInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/user_seting_qqText"
+                android:background="@drawable/input_stype_lucency"
+                android:gravity="right"
+                android:text="QQ"
+                android:textColor="@color/text_gray"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_seting_corporation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/user_seting_corporationRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="＞"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/user_seting_corporationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="公司"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/user_seting_corporationInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/user_seting_corporationText"
+                android:background="@drawable/input_stype_lucency"
+                android:gravity="right"
+                android:text="corporation"
+                android:textColor="@color/text_gray"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_seting_city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/user_seting_cityRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="＞"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/user_seting_cityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/user_seting_cityRight"
+                android:text="city"
+                android:textColor="@color/text_gray"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="地区"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/user_seting_contact.xml -->

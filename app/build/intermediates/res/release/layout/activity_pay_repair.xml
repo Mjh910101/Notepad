@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/title"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/zhifuchegngong_icon"/>
+
+    <TextView
+        android:id="@+id/payResult_payResultText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/title_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="支付成功"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/activity_pay_repair.xml -->

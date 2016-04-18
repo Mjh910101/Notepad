@@ -1,0 +1,20 @@
+package com.zmyh.r.main.user;
+
+import com.zmyh.r.box.ServerObj;
+
+public class ServerBox {
+
+	private static ServerObj mServerObj;
+
+	public static void saveServerObj(ServerObj obj) {
+		if (mServerObj != null) {
+			mServerObj = null;
+		}
+		mServerObj = obj;
+	}
+
+	public static ServerObj getSaveServerObj() {
+		return mServerObj;
+	}
+
+}

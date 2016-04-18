@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#d7d7d7" />
+
+    <stroke
+        android:width="1dip"
+        android:color="@color/line_gray" />
+
+</shape><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/drawable/gray_background_gray_frame_0.xml -->

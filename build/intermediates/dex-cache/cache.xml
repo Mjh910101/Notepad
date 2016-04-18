@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Hua/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-9fba4f8442af10f692c9e376be9bce471494108e.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/xUtils-2.6.14.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/xUtils-2.6.14-837b11661bb24344e346589e274f99686e244ed9.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/libammsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/libammsdk-45b19ad1f869a7643d2feacd76ad73b4f9a2e662.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-4ed3e31ce31a4362f14104efa0543dfa9e0e0473.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/MobTools.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c41aaf9ac27d8a39338463e980799f855ee3d432">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/MobTools-1a9480a66433ff0f53868bb158244fa5cf4fa64e.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/locSDK_5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="389047997db28fcb848dc4247c5590a08b7ff769">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/locSDK_5.2-e73e839844225021d84f83dec6598a1d890e8f45.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/BaiduLBS_Android.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2984359783e671e86b896092c0f1d6cfc3e5e716">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/BaiduLBS_Android-801e789829c648fc12daf8d5598a3036eccb793a.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3526df34297bab9b9cc33d93d6e68f60fc2f94ea">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.2-SNAPSHOT-with-sources-3505bfa0c2b40f01f393e238fa5af1ba4341c3c4.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/qiniu-android-sdk-7.0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7111ff719c8a78a6783e67a68732ed40ea4e8423">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/qiniu-android-sdk-7.0.3-960b389a756c01bf5dac08ac68349b362924b14d.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/library-1.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="82eda228c92c1aab3c0c8626497f13baf249cdb4">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/library-1.2.2-1d8eec010d524ac8864c2b7636d332611675bf94.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/SMSSDK-1.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fdbdc82cc81d5d26e2ef56ab5f4ffb0fc04b4b00">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/SMSSDK-1.2.2-fe1edd80d62b20cc7f07390d9db7d666b46ff7f6.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/android-async-http-1.4.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-fec6e51875c0db36221224af626eede31d5eb817.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/easemobchat_2.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6b9388b9b8895ac9551dcc58c70019a83e03204f">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/easemobchat_2.2.2-2ec2e2ca6ac37b5cf91b6c2783fafafd7bd669dd.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/Notepad_v3/app/libs/Parse-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="56c22930b5d4f77015b6a40c7f14103d3e101001">
+        <dex dex="/Users/Hua/StudioProjects/Notepad_v3/app/build/intermediates/pre-dexed/debug/Parse-1.9.4-8061a3abe1f35989afaf2408b997c0ac7a5a97a3.jar" />
+    </item>
+
+</items>

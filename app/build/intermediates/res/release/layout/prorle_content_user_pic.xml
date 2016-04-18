@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/people_content_imageGridBox"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="5dp"
+              android:background="@drawable/white_background_gray_frame_10"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <com.zmyh.r.view.InsideGridView
+        android:id="@+id/people_content_imageGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"></com.zmyh.r.view.InsideGridView>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/prorle_content_user_pic.xml -->

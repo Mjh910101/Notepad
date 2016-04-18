@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:id="@+id/particular_picBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/white_background_gray_frame_0"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="植物名称:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_titleName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="归　　属:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_muGs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="描　　述:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_remark"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="联  系  人:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_people"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="电      话1:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_phone1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="电      话2:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_phone2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_background_gray_frame_0"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/particular_zsType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="种树类别"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/particular_zsTypeText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_J"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="胸径/地径"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/particular_JText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_zg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="株高"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/particular_zgText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_gf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="冠幅"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/particular_gfText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_type"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="苗木类别"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/particular_typeText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_jzTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="假植时间"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/particular_jzTimeText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_total"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="苗木数量"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_totalInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/particular_price"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="苗木价格"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/particular_priceInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/particular_submitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/submit_icon"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/particular_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/activity_particular.xml -->

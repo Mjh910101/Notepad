@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#fff5e6" />
+
+    <stroke
+        android:width="1dip"
+        android:color="#ed9f2d" />
+
+</shape><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/drawable/orange_background_orange_frame_0.xml -->

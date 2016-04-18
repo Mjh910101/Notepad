@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:background="@drawable/white_background_gray_frame_10"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/people_content_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/people_content_phoneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tell_green_icon"/>
+
+        <TextView
+            android:id="@+id/people_content_phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="手机"
+            android:textColor="@color/black"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/people_content_userPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/people_content_phoneIcon"
+            android:layout_toRightOf="@id/people_content_phoneText"
+            android:background="@drawable/input_stype_lucency"
+            android:gravity="right"
+            android:textColor="@color/text_gray"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/people_content_mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/people_content_mailRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="＞"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/people_content_mailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="邮箱"
+            android:textColor="@color/black"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/people_content_userMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/people_content_mailText"
+            android:background="@drawable/input_stype_lucency"
+            android:gravity="right"
+            android:textColor="@color/text_gray"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/people_content_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/people_content_qqRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="＞"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/people_content_qqText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="QQ"
+            android:textColor="@color/black"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/people_content_userQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/people_content_qqText"
+            android:background="@drawable/input_stype_lucency"
+            android:gravity="right"
+            android:textColor="@color/text_gray"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/people_content_corporation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/people_content_corporationRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="＞"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/people_content_corporationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="公司"
+            android:textColor="@color/black"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/people_content_userCorporation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/people_content_corporationText"
+            android:background="@drawable/input_stype_lucency"
+            android:gravity="right"
+            android:textColor="@color/text_gray"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/people_content_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/people_content_cityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_gray"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="地区"
+            android:textColor="@color/black"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/prorle_content_user_info.xml -->

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/send_emphasis_picBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="输入以下必填内容，大家才能找到此信息"
+                        android:textColor="@color/text_green"
+                        android:textSize="17dp"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/white_background_gray_frame_0"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="标        题:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/send_emphasis_titleName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:hint="1-20字"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="描　　述:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/send_emphasis_remark"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:hint="至少1字"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="联  系  人:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/send_emphasis_people"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="电        话:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/send_emphasis_phone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_city"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="地        区:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/send_emphasis_cityText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_indate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="有  效  期:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/send_emphasis_indateText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="＞"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_total"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:gravity="center"
+                                android:text="苗木数量:"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/send_emphasis_totalInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="以下栏目非必填，但有助于更精确查找"
+                        android:textColor="@color/text_green"
+                        android:textSize="17dp"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_background_gray_frame_0"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="地址"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <EditText
+                                android:id="@+id/send_emphasis_addressInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:background="@drawable/white_background_white_frame_0"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_map"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="17"
+                                android:text="地理位置"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <TextView
+                                android:id="@+id/send_emphasis_mapText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:gravity="center_vertical|right"
+                                android:text="点击获取当前位置"
+                                android:textColor="@color/text_green"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_showMap"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="47"
+                                android:text="显示地理位置"
+                                android:textColor="@color/text_gray_01"
+                                android:textSize="17dp"/>
+
+                            <ImageView
+                                android:id="@+id/send_emphasis_showIcon"
+                                android:layout_width="0dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="17"
+                                android:scaleType="fitEnd"
+                                android:src="@drawable/show_off_icon"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/send_emphasis_smphasisBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_zsType"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="种树类别"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/send_emphasis_zsTypeText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:gravity="center_vertical|right"
+                                    android:text="＞"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_J"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="胸径/地径"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/send_emphasis_JText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:gravity="center_vertical|right"
+                                    android:text="＞"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_zg"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="株高"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/send_emphasis_zgText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:gravity="center_vertical|right"
+                                    android:text="＞"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_gf"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="冠幅"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/send_emphasis_gfText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:gravity="center_vertical|right"
+                                    android:text="＞"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_type"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="苗木类别"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/send_emphasis_typeText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:gravity="center_vertical|right"
+                                    android:text="＞"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_jzTime"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="假植时间"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/send_emphasis_jzTimeText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:gravity="center_vertical|right"
+                                    android:text="＞"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray"/>
+
+                            <LinearLayout
+                                android:id="@+id/send_emphasis_price"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="17"
+                                    android:text="苗木价格"
+                                    android:textColor="@color/text_gray_01"
+                                    android:textSize="17dp"/>
+
+                                <EditText
+                                    android:id="@+id/send_emphasis_priceInput"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="47"
+                                    android:background="@drawable/white_background_white_frame_0"
+                                    android:gravity="center_vertical|right"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/send_emphasis_submitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@color/green_01"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp"
+                        android:paddingTop="8dp"
+                        android:text="发布"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/send_emphasis_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/activity_send_qg_emphasis.xml -->

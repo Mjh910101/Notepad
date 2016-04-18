@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg">#f2efe6</color>
+    <color name="main_tap_bg">#f1fcf4</color>
+    <color name="title_bg">#139809</color>
+    <color name="text_green">#659943</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_01">#43882c</color>
+    <color name="green_02">#fafeed</color>
+    <color name="green_03">#f5ffee</color>
+    <color name="green_04">#f1fcf4</color>
+    <color name="text_gray">#666666</color>
+    <color name="black">#000000</color>
+    <color name="black_lucency">#33000000</color>
+    <color name="line_gray">#cccccc</color>
+    <color name="line_gray_02">#c8c8c8</color>
+    <color name="line_gray_03">#DDDDDD</color>
+    <color name="line_gray_04">#787878</color>
+    <color name="line_green_01">#6fa94a</color>
+    <color name="white_lucency">#00FFFFFF</color>
+    <color name="white_lucency_20">#33FFFFFF</color>
+    <color name="white_lucency_80">#AAFFFFFF</color>
+    <color name="white_lucency_95">#F2FFFFFF</color>
+    <color name="blakc_lucency">#66000000</color>
+    <color name="red">#ff4d4d</color>
+    <color name="text_gray_01">#666666</color>
+    <color name="text_gray_02">#717171</color>
+    <color name="text_gray_03">#8a8a8a</color>
+    <color name="text_gray_04">#999999</color>
+    <color name="sean_bg">#e6e6e6</color>
+    <color name="yellow_01">#ed9f2d</color>
+    <color name="text_orange_01">#eca132</color>
+    <color name="text_green_01">#097f00</color>
+    <color name="text_bule_01">#40aae7</color>
+    <!--  -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_login_pressed">#46678d</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="btn_answer_pressed">#4ebcd3</color>
+    <color name="btn_answer_normal">#2dafa3</color>
+
+</resources>

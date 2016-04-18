@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/people_content_cardBox"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_background_gray_frame_10"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/people_content_cardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="此用戶未添加名片"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
+
+    <ImageView
+        android:id="@+id/people_content_card"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+</RelativeLayout>
+<!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/prorle_content_user_card.xml -->

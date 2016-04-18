@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="消费内容"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/topUp_confirm_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/orange"
+                    android:textSize="17dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/topUp_confirm_topUpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="支付金额"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（订金额为总金额的20%）"
+                    android:layout_below="@id/topUp_confirm_topUpText"
+                    android:textColor="@color/text_gray_01"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/topUp_confirm_topUpManey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/orange"
+                    android:textSize="17dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="请选择支付方式"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/topUp_confirm_zhifubaoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/topUp_confirm_zhifubaoIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/zhifubao_icon"/>
+
+                <TextView
+                    android:id="@+id/topUp_confirm_zhifubaoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/topUp_confirm_zhifubaoIcon"
+                    android:text="支付宝"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topUp_confirm_zhifubaoText"
+                    android:layout_toRightOf="@id/topUp_confirm_zhifubaoIcon"
+                    android:text="建议支付宝用户使用"
+                    android:textColor="@color/text_gray_01"
+                    android:textSize="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/topUp_confirm_zhifubaoRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pay_sype"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/topUp_confirm_weixinLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/topUp_confirm_weixinIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/weixin_icon"/>
+
+                <TextView
+                    android:id="@+id/topUp_confirm_weixinText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/topUp_confirm_weixinIcon"
+                    android:text="微信支付"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topUp_confirm_weixinText"
+                    android:layout_toRightOf="@id/topUp_confirm_weixinIcon"
+                    android:text="建议微信用户使用"
+                    android:textColor="@color/text_gray_01"
+                    android:textSize="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/topUp_confirm_weixinRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pay_sype"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/topUp_confirm_unionpayLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/topUp_confirm_unionpayIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/unionpay_icon"/>
+
+                <TextView
+                    android:id="@+id/topUp_confirm_unionpayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/topUp_confirm_unionpayIcon"
+                    android:text="银联支付"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topUp_confirm_unionpayText"
+                    android:layout_toRightOf="@id/topUp_confirm_unionpayIcon"
+                    android:text="建议银联用户使用"
+                    android:textColor="@color/text_gray_01"
+                    android:textSize="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/topUp_confirm_unionpayRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pay_sype"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topUp_confirm_topUpBtm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/title_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认支付"
+            android:textColor="@color/white"
+            android:textSize="17dp"/>
+
+        <ProgressBar
+            android:id="@+id/topUp_confirm_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/Notepad_v3/app/src/main/res/layout/activity_topup_confirm.xml -->

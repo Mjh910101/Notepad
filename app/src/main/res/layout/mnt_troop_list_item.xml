@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <ImageView
+            android:id="@+id/troop_isChoice"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/on_click_off" />
+
+        <TextView
+            android:id="@+id/troop_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/line_gray"
+            android:padding="1dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" >
+
+                    <TextView
+                        android:id="@+id/troop_particular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/green_background_green_frame_20"
+                        android:gravity="center"
+                        android:text="详细"
+                        android:textColor="@color/green_01"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/troop_particularBall"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignRight="@id/troop_particular"
+                        android:layout_alignTop="@id/troop_particular"
+                        android:src="@drawable/red_bo"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/troop_titleName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/troop_particular"
+                        android:text="标题"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/troop_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="time"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/troop_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="内容"
+                    android:textColor="@color/text_gray_01"
+                    android:textSize="15dp" />
+
+                <com.zmyh.r.view.InsideGridView
+                    android:id="@+id/troop_picGrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp" >
+                </com.zmyh.r.view.InsideGridView>
+
+                <TextView
+                    android:id="@+id/troop_messageText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green_01"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/troop_addressBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp" >
+
+                    <ImageView
+                        android:id="@+id/troop_addressIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/coordinates_icon" />
+
+                    <TextView
+                        android:id="@+id/troop_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/troop_addressIcon"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
