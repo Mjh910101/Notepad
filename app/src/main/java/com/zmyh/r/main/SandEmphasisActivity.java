@@ -60,6 +60,7 @@ import com.zmyh.r.http.UrlHandle;
 import com.zmyh.r.interfaces.CallbackForBoolean;
 import com.zmyh.r.interfaces.PostFileCallback;
 import com.zmyh.r.main.forum.ForumFrameLayout;
+import com.zmyh.r.photo.ImageListAcitvity;
 import com.zmyh.r.photo.TroopObjBox;
 import com.zmyh.r.tool.AddPicDialog;
 import com.zmyh.r.tool.LineViewTool;
@@ -510,6 +511,7 @@ public class SandEmphasisActivity extends Activity {
             mTroopObj = new TroopObj();
         }
         setShowMap(false);
+        setUserMessage(mTroopObj);
         initCity();
     }
 
@@ -549,6 +551,10 @@ public class SandEmphasisActivity extends Activity {
             mapText.setText("获取成功");
         }
 
+        initPicBox();
+    }
+
+    private void setUserMessage(TroopObj obj) {
         if (obj.getMu_contact().equals("")) {
             nameInput.setText(SystemHandle.getString(context, LAST_SAND_PEOPLE));
         } else {
@@ -560,7 +566,6 @@ public class SandEmphasisActivity extends Activity {
         } else {
             phoneInput.setText(obj.getMu_phone_1());
         }
-        initPicBox();
     }
 
     private void setContentView(boolean b) {
@@ -603,10 +608,37 @@ public class SandEmphasisActivity extends Activity {
                 if (b) {
                     sendPicList.remove(obj);
                     initPicBox();
+                } else {
+                    Bundle bundle = new Bundle();
+                    bundle.putStringArrayList("iamge_list", getImageList());
+                    bundle.putInt("position", getImagePosition(obj));
+                    Passageway.jumpActivity(context, ImageListAcitvity.class, bundle);
                 }
             }
         });
         return img;
+    }
+
+    private int getImagePosition(CameraPicObj obj) {
+        if (!sendPicList.contains(obj)) {
+            return 0;
+        }
+        int i = 0;
+        for (CameraPicObj cameraPicObj : sendPicList) {
+            if (cameraPicObj.equals(obj)) {
+                return i;
+            }
+            i += 1;
+        }
+        return 0;
+    }
+
+    public ArrayList<String> getImageList() {
+        ArrayList<String> list = new ArrayList<String>();
+        for (CameraPicObj obj : sendPicList) {
+            list.add(obj.getMediumFilePath());
+        }
+        return list;
     }
 
     private HttpFlieBox getSubmitParams() {

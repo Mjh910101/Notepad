@@ -39,6 +39,7 @@ import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
 import com.zmyh.r.R;
 import com.zmyh.r.box.CameraPicObj;
+import com.zmyh.r.box.CommentObj;
 import com.zmyh.r.box.TroopObj;
 import com.zmyh.r.camera.interfaces.CameraCallbackLintener;
 import com.zmyh.r.camera.interfaces.CameraInterface;
@@ -398,8 +399,8 @@ public class CameraActivity extends Activity {
         final View spaceView = LineViewTool.getSpaceView(context, 5);
         final MinPicView pic = new MinPicView(context, obj);
 
-        minPicBox.addView(spaceView, 0);
-        minPicBox.addView(pic, 0);
+        minPicBox.addView(spaceView);
+        minPicBox.addView(pic);
 
         pic.setCallbackListener(new CallbackForBoolean() {
 
@@ -427,13 +428,35 @@ public class CameraActivity extends Activity {
     }
 
     private void seePic(CameraPicObj obj) {
-         String path = obj.getMediumFilePath();
-         ArrayList<String> picList = new ArrayList<String>();
-         picList.add(path);
-         Bundle b = new Bundle();
-         b.putStringArrayList("iamge_list", picList);
-         b.putInt("position", 0);
-         Passageway.jumpActivity(context, ImageListAcitvity.class, b);
+//         String path = obj.getMediumFilePath();
+//         ArrayList<String> picList = new ArrayList<String>();
+//         picList.add(path);
+        Bundle b = new Bundle();
+        b.putStringArrayList("iamge_list", getImageList());
+        b.putInt("position", getImagePosition(obj));
+        Passageway.jumpActivity(context, ImageListAcitvity.class, b);
+    }
+
+    private int getImagePosition(CameraPicObj obj) {
+        if (!troopList.contains(obj)) {
+            return 0;
+        }
+        int i = 0;
+        for (CameraPicObj cameraPicObj : troopList) {
+            if (cameraPicObj.equals(obj)) {
+                return i;
+            }
+            i += 1;
+        }
+        return 0;
+    }
+
+    public ArrayList<String> getImageList() {
+        ArrayList<String> list = new ArrayList<String>();
+        for (CameraPicObj obj : troopList) {
+            list.add(obj.getMediumFilePath());
+        }
+        return list;
     }
 
     private void getPicAddress(final CameraPicObj obj) {
@@ -649,5 +672,4 @@ public class CameraActivity extends Activity {
         Log.i("Sensor", " Y : " + values[2] + "");
 
     }
-
 }

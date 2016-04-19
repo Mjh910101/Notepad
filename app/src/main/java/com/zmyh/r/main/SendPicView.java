@@ -122,6 +122,9 @@ public class SendPicView extends LinearLayout {
 				// b.putStringArrayList("iamge_list", getPicList());
 				// b.putInt("position", getPosition(obj));
 				// Passageway.jumpActivity(context, ImageListAcitvity.class, b);
+				if (callback != null) {
+					callback.callback(false);
+				}
 			}
 		});
 	}
