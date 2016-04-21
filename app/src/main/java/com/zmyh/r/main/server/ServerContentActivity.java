@@ -17,6 +17,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.InputType;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -138,6 +139,26 @@ public class ServerContentActivity extends Activity {
         initActivity();
         setResizeListener();
         setContentBoxListener();
+        setScrollListener();
+    }
+
+    private void setScrollListener() {
+        scroll.setDescendantFocusability(ViewGroup.FOCUS_BEFORE_DESCENDANTS);
+        scroll.setFocusable(true);
+        scroll.setFocusableInTouchMode(true);
+        scroll.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                v.requestFocusFromTouch();
+                return false;
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        scroll.scrollTo(0, 20);
     }
 
     @OnClick({R.id.title_back, R.id.title_favor, R.id.server_content_sendBtn,
@@ -331,7 +352,7 @@ public class ServerContentActivity extends Activity {
         maneyText.setText("￥" + obj.getMu_price());
         setManey(1);
 
-        scroll.scrollTo(0, 20);
+//        scroll.scrollTo(0, 20);
     }
 
     private void setAddress(String a) {

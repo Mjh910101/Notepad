@@ -431,6 +431,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:layout_toLeftOf="@id/server_content_sendBtn"
             android:background="@drawable/white_background_green_frame_0"/>
     </RelativeLayout>
