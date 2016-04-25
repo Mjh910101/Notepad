@@ -631,7 +631,7 @@ public class CameraActivity extends Activity {
                     previewRate = DisplayUtil.getScreenRate(w, h);
                     SurfaceHolder holder = surfaceView.getSurfaceHolder();
                     CameraInterface.getInstance().doStartPreview(holder,
-                            previewRate);
+                            previewRate, context);
                     surfaceScreen.setVisibility(View.GONE);
                     setFlashlight(NOW_Flashlight);
                     break;
@@ -667,9 +667,9 @@ public class CameraActivity extends Activity {
         values[1] = (float) Math.toDegrees(values[1]);
         values[2] = (float) Math.toDegrees(values[2]);
 
-        Log.i("Sensor", " Z : " + values[0] + "");
-        Log.i("Sensor", " X : " + values[1] + "");
-        Log.i("Sensor", " Y : " + values[2] + "");
+//        Log.i("Sensor", " Z : " + values[0] + "");
+//        Log.i("Sensor", " X : " + values[1] + "");
+//        Log.i("Sensor", " Y : " + values[2] + "");
 
     }
 }

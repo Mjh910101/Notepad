@@ -94,7 +94,8 @@
         </activity>
         <activity
             android:name="com.zmyh.r.camera.CameraActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
             android:name="com.zmyh.r.photo.PhotoActivity"
