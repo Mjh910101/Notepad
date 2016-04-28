@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/server_mapBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/server_map_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/seedling_field_icon_v5"/>
+
+
+                <ImageView
+                    android:id="@+id/server_takePic"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/take_pic_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_photo"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/photo_02_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_sxj_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sxj_icon_v5"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/seedling_buy_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_gy_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gy_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_qg_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qg_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_shopping"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/shopping_car_icon_v5"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tool_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_send_gy"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gyfb_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_send_qg"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qgfb_icon_v5"/>
+
+                <ImageView
+                    android:id="@+id/server_sc_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sc_icon_v5"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/server_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

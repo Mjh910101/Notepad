@@ -98,6 +98,7 @@ import com.zmyh.r.main.people.PeopleFrameLayout;
 import com.zmyh.r.main.people.TagActivity;
 import com.zmyh.r.main.server.ServerFrameLayoutV3;
 import com.zmyh.r.main.server.ServerFrameLayoutV4;
+import com.zmyh.r.main.server.ServerFrameLayoutV5;
 import com.zmyh.r.main.user.LoginActivity;
 import com.zmyh.r.main.user.UserFrameLayout;
 import com.zmyh.r.tool.Passageway;
@@ -159,7 +160,7 @@ public class MainActivity extends Activity implements EMEventListener {
 
     private FragmentManager fragmentManager;
 
-    private ServerFrameLayoutV4 mServerFrameLayout;
+    private ServerFrameLayoutV5 mServerFrameLayout;
     private ForumFrameLayoutV2 mForumFrameLayout;
     private PeopleFrameLayout mPeopleFrameLayout;
     private ChatAllHistoryFragment mChatAllHistoryFragment;
@@ -703,7 +704,7 @@ public class MainActivity extends Activity implements EMEventListener {
         muServerText.setTextColor(ColorBox
                 .getColorForID(context, R.color.title_bg));
         if (mServerFrameLayout == null) {
-            mServerFrameLayout = new ServerFrameLayoutV4();
+            mServerFrameLayout = new ServerFrameLayoutV5();
             transaction.add(R.id.main_content, mServerFrameLayout);
         } else {
             transaction.show(mServerFrameLayout);
