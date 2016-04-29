@@ -196,7 +196,7 @@ public class DownloadImageLoader {
                     .showImageOnFail(INDEX_IMAGE)
                     .imageScaleType(ImageScaleType.IN_SAMPLE_INT)
                     .bitmapConfig(Bitmap.Config.RGB_565).cacheInMemory(true)
-                    .considerExifParams(true).build();
+                    .cacheOnDisc(true).considerExifParams(true).build();
         }
         return meteorImageOptions;
     }
@@ -209,7 +209,7 @@ public class DownloadImageLoader {
                     .showImageOnFail(INDEX_IMAGE)
                     .imageScaleType(ImageScaleType.IN_SAMPLE_INT)
                     .bitmapConfig(Bitmap.Config.RGB_565).cacheInMemory(true)
-                    .considerExifParams(true).build();
+                    .cacheOnDisc(true).considerExifParams(true).build();
         }
         return mDisplayImageOptions;
         // .displayer(new

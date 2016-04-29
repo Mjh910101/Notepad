@@ -1,5 +1,6 @@
 package com.zmyh.r.main.forum;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.json.JSONObject;
@@ -14,6 +15,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -47,7 +49,9 @@ import com.zmyh.r.http.UrlHandle;
 import com.zmyh.r.interfaces.CallbackForBoolean;
 import com.zmyh.r.main.CollectMessageView;
 import com.zmyh.r.main.CommentMessageView;
+import com.zmyh.r.photo.ImageListAcitvity;
 import com.zmyh.r.tool.LineViewTool;
+import com.zmyh.r.tool.Passageway;
 import com.zmyh.r.tool.ShowMessage;
 import com.zmyh.r.view.LazyWebView;
 import com.zmyh.r.view.ResizeScrollView;
@@ -300,6 +304,23 @@ public class ForumContentActivity extends Activity {
         contextWeb.setWebChromeClient(new WebChromeClient());
         contextWeb.setFocusable(false);
         contextWeb.loadData(contentStr);
+    }
+
+    @JavascriptInterface
+    public void onClickForImg(final String imgURL) {
+        Log.d("OnClick", imgURL);
+        Bundle b = new Bundle();
+        b.putStringArrayList("iamge_list",
+                (ArrayList<String>) getImageList(imgURL));
+        b.putInt("position", 0);
+        b.putBoolean("isOnline", true);
+        Passageway.jumpActivity(context, ImageListAcitvity.class, b);
+    }
+
+    private List<String> getImageList(String imgURL) {
+        List<String> imgList = new ArrayList<String>();
+        imgList.add(imgURL);
+        return imgList;
     }
 
     private void setCollectList(List<CommentObj> list) {
